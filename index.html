@@ -5,342 +5,194 @@
     <title>Sang-Eun Lee</title>
     <meta name="author" content="Sang-Eun Lee" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/png" href="images/hp_logo.png" />
   </head>
 
-  <body>
-    <table
-      style="
-        width: 100%;
-        max-width: 1000px;
-        border: 0px;
-        border-spacing: 0px;
-        border-collapse: separate;
-        margin-right: auto;
-        margin-left: auto;
-      "
-    >
-      <tbody>
-        <tr style="padding: 0px">
-          <td style="padding: 0px">
-            <!-- Header Section -->
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr style="padding: 0px">
-                  <td style="padding: 2.5%; width: 63%; vertical-align: middle">
-                    <p
-                      class="name"
-                      style="
-                        text-align: left;
-                        font-size: 2.5em;
-                        font-weight: bold;
-                        margin-bottom: 30px;
-                      "
-                    >
-                      Sang-Eun Lee 이상은
-                    </p>
-                    <p style="font-size: 1.1em;">
-                      I recevied my Ph.D. degree from
-                      <a href="https://vision.ist.i.kyoto-u.ac.jp/"
-                        >Computer Vision Lab</a
-                      >, Kyoto University, Japan, where I was advised by Prof. Ko
-                      Nishino. My research interests are 3D Vision and Robotics,
-                      especially I am currently focusing on extrinsic camera
-                      calibration using moving articulated objects such as
-                      humans and animals in wild, uncontrolled environments.
-                    </p>
-                    <p style="text-align: left; margin-top: 30px; font-size: 1.1em;">
-                      <a href="mailto:slee@vision.ist.i.kyoto-u.ac.jp">Email</a>
-                      &nbsp;/&nbsp;
-                      <a href="data/slee_CV_2508.pdf">CV</a> &nbsp;/&nbsp;
-                      <a
-                        href="https://www.linkedin.com/in/sang-eun-lee-90b863126/"
-                        >Linkedin</a
-                      >
-                      &nbsp;/&nbsp;
-                      <a href="https://github.com/sangeunlee88">Github</a>
-                      &nbsp;/&nbsp;
-                      <a
-                        href="https://scholar.google.co.jp/citations?hl=en&user=tx8T3vkAAAAJ"
-                        >Google Scholar</a
-                      >
-                    </p>
-                  </td>
-                  <td style="padding: 5.5%; width: 30%; max-width: 30%">
-                    <a href="images/slee.jpg"
-                      ><img
-                        style="width: 100%; max-width: 100%"
-                        alt="profile photo"
-                        src="images/slee.jpg"
-                        class="hoverZoomLink"
-                    /></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+    <body>
+    <main class="page">
+      <header class="profile">
+        <div class="profile-intro">
+          <h1 class="name">
+          Sang-Eun Lee 이상은
+          </h1>
+          <p class="bio">In 2025, I returned to my hometown, Changwon, South Korea, after receiving my Ph.D. degree from the <a href="https://vision.ist.i.kyoto-u.ac.jp/">Computer Vision Lab</a> at Kyoto University, Japan. I am currently an Assistant Professor in the <a href="https://www.kyungnam.ac.kr/sites/ce/index.do">Department of Computer Engineering</a> at Kyungnam University. My research interests lie in 3D Computer Vision, with a particular focus on understanding the physical world in 3D from images and videos. During my Ph.D., I studied extrinsic camera calibration (estimating the relative rotation and translation of each static camera) by leveraging moving articulated objects, such as humans and animals in the wild. Beyond static scenarios, I am also interested in scenarios involving moving cameras, such as cameras mounted on vehicles or drones. My goal is to develop robust and accurate 3D vision algorithms for real-world applications, including markerless motion capture, robotics, and augmented reality.
+          </p>
+          <p class="collaboration">
+            <strong>I am always excited to collaborate with researchers and students who share my passion for computer vision and robotics.</strong>
+          </p>
+          <p class="profile-links">
+          <a href="mailto:sangeunlee@kyungnam.ac.kr">Email</a>
+          &nbsp;/&nbsp;
+          <a
+          href="https://www.linkedin.com/in/sang-eun-lee-90b863126/"
+          >LinkedIn</a
+          >
+          &nbsp;/&nbsp;
+          <a href="https://github.com/sangeunlee88">GitHub</a>
+          &nbsp;/&nbsp;
+          <a
+          href="https://scholar.google.co.jp/citations?hl=en&user=tx8T3vkAAAAJ"
+          >Google Scholar</a
+          >
+          </p>
+        </div>
+        <div class="profile-photo">
+          <a href="images/slee.jpg"
+          ><img
+          alt="profile photo"
+          src="images/slee.jpg"
+          class="hoverZoomLink"
+          /></a>
+        </div>
+      </header>
 
-            <!-- Research Section -->
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td
-                    style="padding: 20px; width: 100%; vertical-align: middle"
-                  >
-                    <h2>Main Publications</h2>
-                    <hr />
+      <section class="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Main Publications</h2>
+        <hr />
+        <div class="publication-entry">
+        <img src="images/steerpose.png" alt="SteerPose figure" />
+        <div class="publication-info">
+        <a href="https://kcvl-public.github.io/steerpose/">
+        SteerPose: Simultaneous Extrinsic Camera Calibration and
+        Matching from Articulation
+        </a>
+        <div class="publication-authors">
+        <strong>Sang-Eun Lee</strong>, Ko Nishino, Shohei Nobuhara
+        </div>
+        <div class="publication-venue">
+        British Machine Vision Conference (BMVC), 2025, unpublished track on CV4Animals (CVPRW 2025)
+        </div>
+        </div>
+        </div>
+        <div class="publication-entry">
+        <img src="images/stcalib_teaser.png" alt="StCalib figure" />
+        <div class="publication-info">
+        <a href="https://arxiv.org/abs/2502.12546">
+        Spatiotemporal Multi-Camera Calibration using Freely
+        Moving People
+        </a>
+        <div class="publication-authors">
+        <strong>Sang-Eun Lee</strong>, Ko Nishino, Shohei Nobuhara
+        </div>
+        <div class="publication-venue">
+        IEEE Robotics and Automation Letters (RA-L), 2025 (with
+        ICRA 2026 Presentation)
+        </div>
+        </div>
+        </div>
+        <div class="publication-entry">
+        <img src="images/excalib_teaser.png" alt="ExCalib figure" />
+        <div class="publication-info">
+        <a href="https://vision.ist.i.kyoto-u.ac.jp/research/calibperson/">
+        Extrinsic Camera Calibration From a Moving Person
+        </a>
+        <div class="publication-authors">
+        <strong>Sang-Eun Lee</strong>, Keisuke Shibata, Soma
+        Nonaka, Shohei Nobuhara, Ko Nishino
+        </div>
+        <div class="publication-venue">
+        IEEE Robotics and Automation Letters (RA-L), 2022 (with
+        IROS 2022 Presentation)
+        </div>
+        </div>
+        </div>
+        <div class="publication-entry">
+        <img src="images/repeatable_action_teaser.png" alt="Repeatable Action figure" />
+        <div class="publication-info">
+        <a href="https://vision.ist.i.kyoto-u.ac.jp/research/repaction/">
+        Consistent 3D Human Shape from Repeatable Action
+        </a>
+        <div class="publication-authors">
+        Keisuke Shibata, <strong>Sang-Eun Lee</strong>, Shohei Nobuhara, Ko Nishino
+        </div>
+        <div class="publication-venue">
+        IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2021
+        </div>
+        </div>
+        </div>
+        <div class="publication-entry">
+        <img src="images/loop_closure_teaser.png" alt="Loop Closure figure" />
+        <div class="publication-info">
+        <a href="/data/fcv16.pdf">
+        Loop-Closure Detection based on Image Retrieval with Location Information
+        </a>
+        <div class="publication-authors">
+        <strong>Sang-Eun Lee</strong>, Jae Seok Jang, Eun-Ju Yang, Dae-Hwa Seo, Soon Ki Jung
+        </div>
+        <div class="publication-venue">
+        The Korea-Japan joint workshop on Frontiers of Computer Vision (FCV), 2016
+        </div>
+        </div>
+        </div>
+        <div class="publication-entry">
+        <img src="images/htracking_adaptive_teaser.png" alt="Adaptive Human Tracking figure" />
+        <div class="publication-info">
+        <a href="/data/jsp14.pdf">
+        Human Tracking with Particle Filter Based on Locally Adaptive Appearance Model
+        </a>
+        <div class="publication-authors">
+        <strong>Sang-Eun Lee</strong>, Keiichi Horio
+        </div>
+        <div class="publication-venue">
+        Journal of Signal Processing, 2014 (with
+        NCSP 14 Presentation)
+        </div>
+        </div>
+        </div>
+        <div class="publication-entry">
+        <img src="images/htracking_teaser.png" alt="Adaptive Human Tracking figure" />
+        <div class="publication-info">
+        <a href="https://ieeexplore.ieee.org/document/6736273">
+        Human Tracking using Particle Filter with Reliable Appearance Model
+        </a>
+        <div class="publication-authors">
+        <strong>Sang-Eun Lee</strong>, Keiichi Horio
+        </div>
+        <div class="publication-venue">
+        The SICE Annual Conference, 2013
+        </div>
+        </div>
+        </div>
+      </section>
 
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Research Papers -->
-            <table class="publications">
-              
-              <tbody>
-                <!-- Paper 1 -->
-                <div class="publication-entry">
-                  <img src="images/steerpose.png" alt="SteerPose figure" />
-                  <div class="publication-info">
-                    <a href="https://kcvl-public.github.io/steerpose/">
-                      SteerPose: Simultaneous Extrinsic Camera Calibration and
-                      Matching from Articulation
-                    </a>
-                    <div class="publication-authors">
-                      <strong>Sang-Eun Lee</strong>, Ko Nishino, Shohei Nobuhara
-                    </div>
-                    <div class="publication-venue">
-                      British Machine Vision Conference (BMVC), 2025, unpublished track on CV4Animals (CVPRW 2025)
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Paper 2 -->
-                <tr></tr>
-
-                <div class="publication-entry">
-                  <img src="images/stcalib_teaser.png" alt="StCalib figure" />
-                  <div class="publication-info">
-                    <a href="https://arxiv.org/abs/2502.12546">
-                      Spatiotemporal Multi-Camera Calibration using Freely
-                      Moving People
-                    </a>
-                    <div class="publication-authors">
-                      <strong>Sang-Eun Lee</strong>, Ko Nishino, Shohei Nobuhara
-                    </div>
-                    <div class="publication-venue">
-                      IEEE Robotics and Automation Letters (RA-L), 2025 (with
-                      ICRA 2026 Presentation)
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Paper 3 -->
-
-                <div class="publication-entry">
-                  <img src="images/excalib_teaser.png" alt="ExCalib figure" />
-                  <div class="publication-info">
-                    <a href="https://vision.ist.i.kyoto-u.ac.jp/pubs/SLee_RAL22.pdf">
-                      Extrinsic Camera Calibration From a Moving Person
-                    </a>
-                    <div class="publication-authors">
-                      <strong>Sang-Eun Lee</strong>, Keisuke Shibata, Soma
-                      Nonaka, Shohei Nobuhara, Ko Nishino
-                    </div>
-                    <div class="publication-venue">
-                      IEEE Robotics and Automation Letters (RA-L), 2022 (with
-                      IROS 2022 Presentation)
-                    </div>
-                  </div>
-                </div>
-
-
-                <!-- Paper 4 -->
-
-                <div class="publication-entry">
-                  <img src="images/repeatable_action_teaser.png" alt="Repeatable Action figure" />
-                  <div class="publication-info">
-                    <a href="https://vision.ist.i.kyoto-u.ac.jp/pubs/KShibata_CVPRW21.pdf">
-                      Consistent 3D Human Shape from Repeatable Action
-                    </a>
-                    <div class="publication-authors">
-                      Keisuke Shibata, <strong>Sang-Eun Lee</strong>, Shohei Nobuhara, Ko Nishino
-                    </div>
-                    <div class="publication-venue">
-                      IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2021
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Paper 5 -->
-
-                <div class="publication-entry">
-                  <img src="images/loop_closure_teaser.png" alt="Loop Closure figure" />
-                  <div class="publication-info">
-                    <a href="/data/fcv16.pdf">
-                      Loop-Closure Detection based on Image Retrieval with Location Information
-                    </a>
-                    <div class="publication-authors">
-                      <strong>Sang-Eun Lee</strong>, Jae Seok Jang, Eun-Ju Yang, Dae-Hwa Seo, Soon Ki Jung
-                    </div>
-                    <div class="publication-venue">
-                      The Korea-Japan joint workshop on Frontiers of Computer Vision (FCV), 2016
-                    </div>
-                  </div>
-                </div>
-
-                 <!-- Paper 6 -->
-
-                 <div class="publication-entry">
-                  <img src="images/htracking_adaptive_teaser.png" alt="Adaptive Human Tracking figure" />
-                  <div class="publication-info">
-                    <a href="/data/jsp14.pdf">
-                      Human Tracking with Particle Filter Based on Locally Adaptive Appearance Model
-                    </a>
-                    <div class="publication-authors">
-                      <strong>Sang-Eun Lee</strong>, Keiichi Horio
-                    </div>
-                    <div class="publication-venue">
-                      Journal of Signal Processing, 2014 (with
-                      NCSP 14 Presentation)
-                    </div>
-                  </div>
-                </div>
-
-
-
-                 <!-- Paper 7 -->
-
-                 <div class="publication-entry">
-                  <img src="images/htracking_teaser.png" alt="Adaptive Human Tracking figure" />
-                  <div class="publication-info">
-                    <a href="https://ieeexplore.ieee.org/document/6736273">
-                    Human Tracking using Particle Filter with Reliable Appearance Model
-                    </a>
-                    <div class="publication-authors">
-                      <strong>Sang-Eun Lee</strong>, Keiichi Horio
-                    </div>
-                    <div class="publication-venue">
-                      The SICE Annual Conference, 2013
-                    </div>
-                  </div>
-                </div>
-
-
-                
-                </tr>
-              </tbody>
-            </table>
-            <!-- Research Experience -->
-            <h2 class="experience-title">Research Experience</h2>
-            <hr />
-            <div class="experience-entry">
-              <strong>Research Engineer in Center for Embedded Software Technology (CEST)</strong><br />
-              <em>Kyungpook National University, South Korea</em><br />
-              <em>Advised by Prof. Soon Ki Jung</em><br />
-              <strong>Apr. 2014 – Jul. 2018</strong>
-              <ul>
-                <li>Accurate indoor/outdoor positioning system based on Computer Vision</li>
-                <li>Indoor hospital guidance system using fusion of Monocular Camera and IMU</li>
-                <li>Road lane detection and tracking using Vanishing Point and Particle Filter </li>
-              </ul>
-            </div>
-
-            <div class="experience-entry">
-              <strong>Research Intern in Imaging Media Research Center</strong><br />
-              <em>Korea Institute of Science and Technology (KIST), South Korea</em><br />
-              <em>Advised by Ph.D. Ig Jae Kim</em><br />
-              <strong>Oct. 2011 – Mar. 2012</strong>
-              <ul>
-                <li>Gesture recognition and interaction</li>
-              </ul>
-            </div>
-            <div class="experience-entry">
-              <strong>Exchange Student (Global Joint Project) in Visual Sensing Lab</strong><br />
-              <em>Kyushu Institute of Technology, Japan</em><br />
-              <em>Advised by Prof. Seiji Ishikawa</em><br />
-              <strong>Apr. 2010 – Mar. 2011</strong>
-              <ul>
-                <li>Pedestrian detection and tracking algorithm from a vehicle-mounted camera</li>
-              </ul>
-            </div>
-
-
-
-
-
-            <!-- Education Section -->
-            <h2 class="experience-title">Education</h2>
-            <hr />
-            <div class="experience-entry">
-              <strong>Ph.D. in Intelligence Science and Technology</strong><br />
-              <em>Graduate School of Informatics, Kyoto University, Japan</em><br />
-              <em>Advised by Prof. Ko Nishino and Prof. Shohei Nobuhara</em><br />
-              <strong>Oct. 2019 – Sep. 2025</strong>
-            </div>
-            <br />
-            <div class="experience-entry">
-              <strong>M.S. in Brain Science and Engineering</strong><br />
-              <em>Graduate School of Life Science and System Engineering, Kyushu Institute of Technology, Japan</em><br />
-              <em>Advised by Prof. Keiichi Horio</em><br />
-              <strong>Apr. 2012 – Mar. 2014</strong>
-            </div>
-            <br />
-            
-            <div class="experience-entry">
-              <strong>B.S. in Control and Instrumentation Engineering </strong><br />
-              <em>Collage of Mechatronics, Changwon National University, South Korea</em><br />
-              <strong>Mar. 2006 – Aug. 2011</strong>
-            </div>
-            <br />
-            <!-- Footer -->
-            <table
-              style="
-                width: 100%;
-                border: 0px;
-                border-spacing: 0px;
-                border-collapse: separate;
-                margin-right: auto;
-                margin-left: auto;
-              "
-            >
-              <tbody>
-                <tr>
-                  <td style="padding: 0px">
-                    <br />
-                    <p style="text-align: right; font-size: small">
-                      Template from
-                      <a href="https://github.com/jonbarron/jonbarron_website"
-                        >this website</a
-                      >.
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <section class="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Research Experience</h2>
+        <hr />
+        <div class="experience-entry">
+        <strong>Research Engineer in Center for Embedded Software Technology (CEST)</strong><br />
+        <em>Kyungpook National University, South Korea</em><br />
+        <strong>Apr. 2014 – Jul. 2018</strong>
+        <ul>
+        <li>Developed accurate indoor and outdoor positioning systems based on computer vision.</li>
+        <li>Designed an indoor hospital guidance system using monocular camera and IMU fusion.</li>
+        <li>Implemented road lane detection and tracking using a particle filter with vanishing-point estimation.</li>
+        </ul>
+        </div>
+        <div class="experience-entry">
+        <strong>Intern, Computer-Aided Engineering Team</strong><br />
+        <em>Toyota Auto Body Co., Ltd., Japan</em><br />
+        <strong>Aug. 2012 – Sept. 2012</strong>
+        <ul>
+        <li>Analyzed a torsion bar for a truck.</li>
+        </ul>
+        </div>
+        <div class="experience-entry">
+        <strong>Research Intern in Imaging Media Research Center</strong><br />
+        <em>Korea Institute of Science and Technology (KIST), South Korea</em><br />
+        <strong>Oct. 2011 – Mar. 2012</strong>
+        <ul>
+        <li>Conducted research on gesture recognition and interaction using IR sensors.</li>
+        </ul>
+        </div>
+        <div class="experience-entry">
+        <strong>Exchange Student (Global Joint Project), Visual Sensing Laboratory</strong><br />
+        <em>Kyushu Institute of Technology, Japan</em><br />
+        <strong>Apr. 2010 – Mar. 2011</strong>
+        <ul>
+        <li>Developed a pedestrian detection and tracking algorithm for a vehicle-mounted camera.</li>
+        </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
